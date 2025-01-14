@@ -1,0 +1,30 @@
+{
+  "name": "Default",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "true",
+      "username": "vscode",
+      "userUid": "1000",
+      "userGid": "1000",
+      "upgradePackages": "true"
+    },
+    "ghcr.io/kadykov/devcontainer-features/pre-commit:1": {},
+    "ghcr.io/lukewiwa/features/shellcheck:0": {},
+    "ghcr.io/dhoeric/features/hadolint:1": {}
+  },
+  "postCreateCommand": "pre-commit install",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "GitHub.vscode-github-actions",
+        "eamodio.gitlens",
+        "exiasr.hadolint"
+      ]
+    }
+  }
+}
