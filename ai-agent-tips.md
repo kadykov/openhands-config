@@ -9,7 +9,7 @@
 
 - **Pre-Commit Hooks**:
   - If the project utilizes `pre-commit` hooks, install them after setting up the environment and dependencies.
-  - If `pre-commit` hooks throw errors, it is often because they have modified some files. Typically, these changes are minor and do not require reviewing. If `git commit` fails and files are modified, you can directly stage these changes and re-commit.
+  - If `pre-commit` hooks throw errors, it is often because they have modified some files. To automatically apply fixes, run `pre-commit run --all-files` before attempting to stash or commit. This ensures all fixes are applied correctly without manual intervention.
 
 - **Testing**:
   - If the project includes tests, write tests for any new features you implement.
