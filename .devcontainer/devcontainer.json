@@ -23,7 +23,8 @@
         "ms-azuretools.vscode-docker",
         "GitHub.vscode-github-actions",
         "eamodio.gitlens",
-        "exiasr.hadolint"
+        "exiasr.hadolint",
+        "skellock.just"
       ]
     }
   }
