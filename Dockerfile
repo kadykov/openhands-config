@@ -1,4 +1,4 @@
-ARG OPENHANDS_VERSION=0.20.0
+ARG OPENHANDS_VERSION=0.21.0
 
 FROM docker.all-hands.dev/all-hands-ai/runtime:${OPENHANDS_VERSION}-nikolaik
 
